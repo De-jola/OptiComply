@@ -1,0 +1,8 @@
+.hero-section {
+  background: linear-gradient(
+      270deg,
+      rgba(5, 35, 109, 0.14) 32.62%,
+      rgba(5, 35, 109, 0.7) 58.78%
+    ),
+    url(/public/hero-image.png) lightgray 50% / cover no-repeat;
+}
