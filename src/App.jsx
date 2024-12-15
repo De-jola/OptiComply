@@ -22,7 +22,7 @@ function App() {
     setShowModal(false);
   };
   return (
-    <main className="relative">
+    <main className="relative container max-w-[1728px] m-auto">
       <Navbar handleClick={handleButtonClick} />
       <Hero handleModal={handleButtonClick} />
       <Partner />
