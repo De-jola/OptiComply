@@ -7,7 +7,7 @@ const ContactUs = () => {
   return (
     <section>
       <div
-        className="bg-cover bg-left py-14 px-20 xl:py-20 xl:px-28 flex justify-end"
+        className="bg-cover px-4 py-8 lg:bg-left lg:py-14 lg:px-20 xl:py-20 xl:px-28 lg:flex justify-end"
         style={{
           background:
             'linear-gradient(0deg, rgba(236, 74, 10, 0.10) 0%, rgba(236, 74, 10, 0.10) 100%), url("/Contact us.png") lightgray no-repeat',
@@ -15,12 +15,12 @@ const ContactUs = () => {
           backgroundPosition: "top left",
         }}
       >
-        <div className="bg-white flex flex-col gap-6 p-16 w-[498px] rounded-[20px]">
-          <div className="flex flex-col gap-6">
-            <h1 className="text-[#39312F] text-4xl xl:text-5xl font-header">
+        <div className="bg-white flex flex-col gap-6 px-[24px] py-[48px] lg:p-16 lg:w-[498px] rounded-[20px]">
+          <div className="flex flex-col gap-[12px] lg:gap-6 sm:text-center lg:text-left">
+            <h1 className="text-[#39312F] text-[32px] lg:text-4xl xl:text-5xl font-header">
               Contact Us
             </h1>
-            <p className="text-gray-600 xl:text-lg">
+            <p className="text-gray-600 text-[14px] lg:text-base xl:text-lg">
               Have questions or want to see our solutions in action? Get in
               touch with our team today.
             </p>
@@ -30,19 +30,23 @@ const ContactUs = () => {
               <div className="p-[10px] bg-orange-100 rounded-lg w-[38px]">
                 <img src={email} />
               </div>
-              <p className="text-gray-600">contact@opticomply.com</p>
+              <p className="text-gray-600 sm:text-[14px] lg:text-base">
+                contact@opticomply.com
+              </p>
             </div>
             <div className="flex items-center gap-2">
               <div className="p-[10px] bg-orange-100 rounded-lg w-[38px]">
                 <img src={phone} />
               </div>
-              <p className="text-gray-600">+234 800 000 0000</p>
+              <p className="text-gray-600 sm:text-[14px] lg:text-base">
+                +234 800 000 0000
+              </p>
             </div>
             <div className="flex items-center gap-2">
               <div className="p-[10px] bg-orange-100 rounded-lg w-[38px]">
                 <img src={location} />
               </div>
-              <p className="text-gray-600">
+              <p className="text-gray-600 sm:text-[14px] lg:text-base">
                 794 Mcallister Street, Yaba, Lagos, Nigeria.
               </p>
             </div>

@@ -7,8 +7,8 @@ const DemoForm = ({ onclose }) => {
       className="absolute inset-0 bg-black bg-opacity-50 z-50"
       onClick={onclose}
     >
-      <div className="fixed top-3 right-3 left-3 text-center p-12 xl:p-16 w-[600px] xl:w-[644px] bg-[#FCFCFD] m-auto rounded-[20px] flex flex-col gap-[16px]">
-        <div className="flex flex-col items-center gap-[10px] w-[468px] xl:w-[516px]">
+      <div className="fixed top-3 right-3 left-3 text-center p-12 xl:p-16 lg:w-[600px] xl:w-[644px] bg-[#FCFCFD] m-auto rounded-[20px] flex flex-col gap-[16px]">
+        <div className="flex flex-col items-center gap-[10px] lg:w-[468px] xl:w-[516px]">
           <p className="text-gray-600 text-sm xl:text-base">DEMO REQUEST</p>
           <h1 className="text-4xl xl:text-5xl font-header text-orange-600">
             Explore OptiComply
@@ -18,7 +18,7 @@ const DemoForm = ({ onclose }) => {
             a demo today!
           </p>
         </div>
-        <form className="flex flex-col gap-6 w-[400px] xl:w-[434px] m-auto">
+        <form className="flex flex-col gap-6 lg:w-[400px] xl:w-[434px] m-auto">
           <input
             type="text"
             placeholder="Your name"

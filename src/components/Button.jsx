@@ -5,7 +5,7 @@ const Button = ({ location, handleClick }) => {
 
   return (
     <button
-      className={`p-3 xl:py-[12px] xl:px-[24px] rounded-xl font-bold text-lg ${
+      className={`p-3 xl:py-[12px] xl:px-[24px] rounded-[12px] lg:rounded-xl font-bold text-lg ${
         location === "nav"
           ? "bg-orange-600 text-white"
           : "bg-white text-orange-600"

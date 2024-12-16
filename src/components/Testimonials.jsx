@@ -3,12 +3,12 @@ import testimonialData from "../data/testimonialData";
 
 const Testimonials = () => {
   return (
-    <section className="py-14 px-20 xl:py-20 xl:px-28 bg-orange-50">
+    <section className="px-4 py-8 lg:py-14 lg:px-20 xl:py-20 xl:px-28 bg-orange-50">
       <div className="flex flex-col gap-8">
-        <h1 className="text-[#39312F] text-center font-header text-4xl xl:text-5xl">
+        <h1 className="text-[#39312F] text-center font-header text-[28px] lg:text-4xl xl:text-5xl">
           What Our Clients say About Us
         </h1>
-        <div className="grid grid-cols-3 gap-6 ">
+        <div className="flex flex-col gap-[24px] lg:grid grid-cols-3 lg:gap-6 ">
           {testimonialData.map((item) => (
             <div
               key={item.id}

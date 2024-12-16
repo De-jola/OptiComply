@@ -7,56 +7,64 @@ import arrowGrowth from "../assets/images/fluent_arrow-growth-20-filled.svg";
 const Results = () => {
   return (
     <>
-      <section className="px-28 py-20 bg-orange-25">
+      <section className="px-16 py-8 lg:px-14 py:20 xl:px-28 xl:py-20 bg-orange-25">
         <div className="flex flex-col gap-[48px]">
           <h3
-            className="text-center font-header text-[#39312F]
-           text-4xl xl:text-5xl"
+            className="text-center font-header text-[#39312F] text-2xl
+           lg:text-4xl xl:text-5xl"
           >
             Our results in numbers
           </h3>
-          <div className="flex justify-center justify-around">
-            <div className="flex flex-col gap-[32px] items-center text-5xl xl:text-[64px] font-header">
+          <div className="flex justify-center  sm:flex-wrap sm:gap-[32px] lg:items-center lg:content-center lg:gap-y-[114px]">
+            <div className="flex flex-col gap-[32px] items-center text-5xl xl:text-[64px] font-header sm:w-[259px]">
               <div className="bg-orange-600 w-[48px] xl:w-16 p-2 rounded-xl flex justify-center">
                 <img src={loveIcon} />
               </div>
-              <div className="text-center">
-                <h2 className="inline  text-[#39312F]">99</h2>
-                <span className="text-orange-100">%</span>
+              <div className="text-center sm:flex sm:flex-col sm:gap-[8px]">
+                <div>
+                  <h2 className="inline  text-[#39312F]">99</h2>
+                  <span className="text-orange-100">%</span>
+                </div>
                 <p className="font-body text-sm text-[#39312F]">
                   Customer Satisfaction
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-[32px] items-center text-5xl font-header xl:text-[64px] ">
+            <div className="flex flex-col gap-[32px] items-center text-5xl font-header xl:text-[64px] sm:w-[259px]">
               <div className="bg-orange-600 w-[48px] xl:w-16 p-2 rounded-xl flex justify-center">
                 <img src={products} />
               </div>
-              <div className="text-center">
-                <h2 className="inline  text-[#39312F]">100</h2>
-                <span className="text-orange-100">+</span>
+              <div className="text-center sm:flex sm:flex-col sm:gap-[8px]">
+                <div>
+                  <h2 className="inline  text-[#39312F]">100</h2>
+                  <span className="text-orange-100">+</span>
+                </div>
                 <p className="font-body text-sm text-[#39312F]">
                   Company Solutions
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-[32px] items-center font-header  text-5xl xl:text-[64px] ">
+            <div className="flex flex-col gap-[32px] items-center font-header  text-5xl xl:text-[64px] sm:w-[259px]">
               <div className="bg-orange-600 w-[48px] xl:w-16 p-2 rounded-xl flex justify-center">
                 <img src={team} />
               </div>
-              <div className="text-center">
-                <h2 className="inline  text-[#39312F]">25</h2>
-                <span className="text-orange-100">+</span>
+              <div className="text-center sm:flex sm:flex-col sm:gap-[8px]">
+                <div>
+                  <h2 className="inline  text-[#39312F]">25</h2>
+                  <span className="text-orange-100">+</span>
+                </div>
                 <p className="font-body text-sm text-[#39312F]">Team Members</p>
               </div>
             </div>
-            <div className="flex flex-col gap-[32px] items-center font-header  text-5xl xl:text-[64px]">
+            <div className="flex flex-col gap-[32px] items-center font-header  text-5xl xl:text-[64px] sm:w-[259px]">
               <div className="bg-orange-600 w-[48px] xl:w-16 p-2 rounded-xl flex justify-center">
                 <img src={arrowGrowth} />
               </div>
-              <div className="text-center">
-                <h2 className="inline  text-[#39312F]">240</h2>
-                <span className=" text-orange-100 ">%</span>
+              <div className="text-center sm:flex sm:flex-col sm:gap-[8px]">
+                <div>
+                  <h2 className="inline  text-[#39312F]">240</h2>
+                  <span className=" text-orange-100 ">%</span>
+                </div>
                 <p className="font-body text-sm text-[#39312F]">
                   Company Growth
                 </p>

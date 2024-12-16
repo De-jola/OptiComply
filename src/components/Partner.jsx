@@ -5,38 +5,49 @@ import checkIcon from "../assets/images/Check icon.svg";
 const Partner = () => {
   return (
     <>
-      <section>
-        <div className="flex items-center xl:pr-28 pr-20 xl:gap-[86px] gap-[64px] 3xl:pr-36 bg-orange-50">
-          <div className="w-[703px] 2xl:w-[803px] 3xl:w-[903px]">
-            <img src={PartnerImg} className="w-full" />
+      <section className="bg-orange-50  lg:pr-20 xl:pr-28 3xl:pr-36">
+        <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-[64px]">
+          {/* Image Section */}
+          <div className="w-full lg:w-1/2">
+            <img src={PartnerImg} alt="Partner" className="w-full h-auto" />
           </div>
-          <div className="w-1/2 ">
-            <h2 className="xl:text-5xl text-4xl 2xl:text-6xl font-header text-[#39312F] 3xl:text-7xl mb-4">
+
+          {/* Text Section */}
+          <div className="text-center sm:pb-8 sm:px-4 lg:w-1/2 lg:text-left">
+            <h2 className="text-[#39312F] text-3xl sm:text-4xl lg:text-[40px] lg:w-[400px] xl:text-5xl xl:w-[539px] 2xl:text-6xl 3xl:text-7xl font-header mb-4">
               OptiComply is your trusted partner in the fight against financial
               crimes.
             </h2>
-            <p className="text-[20px] mb-[32px] 3xl:text-[30px]">
+            <p className="text-base sm:text-lg lg:text-[18px] xl:text-[20px] 3xl:text-2xl text-gray-800 mb-8">
               Our innovative solutions ensure seamless compliance with global
               and U.S. regulations while enhancing operational efficiency.
             </p>
-            <ul className="flex flex-col gap-[16px] text-[18px] 3xl:text-[25px]">
-              <li className="flex gap-[16px] items-center">
-                <span>
-                  <img src={checkIcon} />
-                </span>
-                AI-Driven Insights for Risk Management.
+
+            {/* Features List */}
+            <ul className="flex flex-col gap-4 text-sm text-left sm:text-base lg:text-base lg:w-[356px] xl:w-[495px] xl:text-[18px] 3xl:text-xl">
+              <li className="flex gap-4 items-start">
+                <img
+                  src={checkIcon}
+                  alt="Check Icon"
+                  className="w-5 h-5 sm:w-6 sm:h-6"
+                />
+                <span>AI-Driven Insights for Risk Management.</span>
               </li>
-              <li className="flex gap-[16px] items-center">
-                <span>
-                  <img src={checkIcon} />
-                </span>
-                Automated Reporting to Meet Regulatory Standards.
+              <li className="flex gap-4 items-start">
+                <img
+                  src={checkIcon}
+                  alt="Check Icon"
+                  className="w-5 h-5 sm:w-6 sm:h-6"
+                />
+                <span>Automated Reporting to Meet Regulatory Standards.</span>
               </li>
-              <li className="flex gap-[16px] items-center">
-                <span>
-                  <img src={checkIcon} />
-                </span>
-                Localized Support and Expertise.
+              <li className="flex gap-4 items-start">
+                <img
+                  src={checkIcon}
+                  alt="Check Icon"
+                  className="w-5 h-5 sm:w-6 sm:h-6"
+                />
+                <span>Localized Support and Expertise.</span>
               </li>
             </ul>
           </div>

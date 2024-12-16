@@ -4,11 +4,14 @@ import socialMediaIcons from "../assets/images/Social Media Container.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#39312F] text-white py-14 px-20 xl:py-20 xl:px-28 flex flex-col gap-[32px]">
-      <div className="flex justify-between">
-        <div className="w-[276px] xl:w-[306px] flex flex-col gap-[10px] ">
+    <footer className="bg-[#39312F] text-white text-center  px-4 py-8 lg:py-14 lg:px-20 lg:text-left xl:py-20 xl:px-28 flex flex-col gap-[32px]">
+      <div className="flex flex-col gap-[32px] lg:flex lg:flex-row justify-between">
+        <div className=" flex flex-col gap-[10px] lg:w-[276px] xl:w-[306px]  ">
           <div>
-            <img src={footerIcon} />
+            <img
+              src={footerIcon}
+              className="w-[188px] m-auto lg:m-0 lg:w-[192px]"
+            />
           </div>
           <div className="flex flex-col gap-[32px] ">
             <p>
@@ -16,11 +19,11 @@ const Footer = () => {
               accessible for all institutions.
             </p>
             <div>
-              <img src={socialMediaIcons} />
+              <img src={socialMediaIcons} className="m-auto lg:m-0" />
             </div>
           </div>
         </div>
-        <div className="flex gap-[58px] xl:gap-[64px] justify-between">
+        <div className="flex flex-col gap-[32px] lg:flex lg:flex-row lg:justify-between gap-[58px] xl:gap-[64px] ">
           <div className="flex flex-col gap-4 xl:gap-20px ">
             <h1 className="xl:text-[20px] font-bold text-lg">Company</h1>
             <ul className="flex flex-col gap-[10px]">
@@ -49,7 +52,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col gap-[32px]">
-        <hr></hr>
+        <hr className="sm:hidden lg:block"></hr>
         <p className="text-gray-300 text-center">
           Copyright © 2024 OptiComply | All Rights Reserved
         </p>
