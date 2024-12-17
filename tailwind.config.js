@@ -16,7 +16,7 @@ export default {
       },
     },
     fontFamily: {
-      header: "Signate Grotesk",
+      // header: "Signate Grotesk",
       body: "Inter",
     },
 
