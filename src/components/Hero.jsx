@@ -3,11 +3,13 @@ import React from "react";
 import heroPlaceholder from "../assets/images/Frame 4.svg";
 import Button from "./Button";
 import Brands from "./Brands";
+import { motion } from "motion/react";
 
 const Hero = ({ handleModal }) => {
   return (
     <>
       <section
+        id="home"
         className="bg-lightgray"
         style={{
           background:
@@ -29,13 +31,18 @@ const Hero = ({ handleModal }) => {
               <Button location="hero" handleClick={handleModal} />
             </div>
             {/* Image Section */}
-            <div className="w-full lg:w-5/12">
+            <motion.div
+              className="w-full lg:w-5/12"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            >
               <img
                 src={heroPlaceholder}
                 alt="Hero Placeholder"
                 className="w-full"
               />
-            </div>
+            </motion.div>
           </div>
           {/* Brands Section */}
           <Brands />

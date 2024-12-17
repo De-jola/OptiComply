@@ -1,5 +1,6 @@
 import React from "react";
 import testimonialData from "../data/testimonialData";
+import { motion } from "motion/react";
 
 const Testimonials = () => {
   return (
@@ -10,9 +11,12 @@ const Testimonials = () => {
         </h1>
         <div className="flex flex-col gap-[24px] lg:grid grid-cols-3 lg:gap-6 ">
           {testimonialData.map((item) => (
-            <div
+            <motion.div
               key={item.id}
               className="flex flex-col gap-6 bg-orange-100 p-8 rounded-[20px]"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
             >
               <div>
                 <img src={item.starImg} />
@@ -29,7 +33,7 @@ const Testimonials = () => {
                   <p>{item.role}</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

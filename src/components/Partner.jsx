@@ -6,7 +6,7 @@ const Partner = () => {
   return (
     <>
       <section className="bg-orange-50  lg:pr-20 xl:pr-28 3xl:pr-36">
-        <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-[64px]">
+        <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-[64px]" id="about">
           {/* Image Section */}
           <div className="w-full lg:w-1/2">
             <img src={PartnerImg} alt="Partner" className="w-full h-auto" />

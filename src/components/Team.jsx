@@ -1,5 +1,6 @@
 import React from "react";
 import teamData from "../data/teamData";
+import { motion } from "motion/react";
 
 const Team = () => {
   return (
@@ -16,7 +17,7 @@ const Team = () => {
         </div>
         <div className="flex flex-col gap-[16px] lg:grid grid-cols-3 grid-rows-2 lg:gap-4 lg:items-center lg:content-between lg:gap-8">
           {teamData.map((item) => (
-            <div
+            <motion.div
               className="p-12 flex flex-col justify-end items-start rounded-[20px] h-[480px] xl:h-[520px]"
               key={item.id}
               style={{
@@ -24,10 +25,13 @@ const Team = () => {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
             >
               <h1 className="text-white text-[600] text-3xl">{item.name}</h1>
               <p className="text-white text-[16px]">{item.position}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

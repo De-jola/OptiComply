@@ -7,7 +7,7 @@ import arrowGrowth from "../assets/images/fluent_arrow-growth-20-filled.svg";
 const Results = () => {
   return (
     <>
-      <section className="px-16 py-8 lg:px-14 py:20 xl:px-28 xl:py-20 bg-orange-25">
+      <section className="px-16 py-8 lg:px-14 py:20 xl:px-28 xl:py-20 bg-orange-25" id="results">
         <div className="flex flex-col gap-[48px]">
           <h3
             className="text-center font-header text-[#39312F] text-2xl

@@ -2,10 +2,11 @@ import React from "react";
 import email from "../assets/images/emailIcon.svg";
 import phone from "../assets/images/phoneIcon.svg";
 import location from "../assets/images/locationIcon.svg";
+import { motion } from "motion/react";
 
 const ContactUs = () => {
   return (
-    <section>
+    <section id="contact">
       <div
         className="bg-cover px-4 py-8 lg:bg-left lg:py-14 lg:px-20 xl:py-20 xl:px-28 lg:flex justify-end"
         style={{
@@ -15,7 +16,12 @@ const ContactUs = () => {
           backgroundPosition: "top left",
         }}
       >
-        <div className="bg-white flex flex-col gap-6 px-[24px] py-[48px] lg:p-16 lg:w-[498px] rounded-[20px]">
+        <motion.div
+          className="bg-white flex flex-col gap-6 px-[24px] py-[48px] lg:p-16 lg:w-[498px] rounded-[20px]"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
           <div className="flex flex-col gap-[12px] lg:gap-6 sm:text-center lg:text-left">
             <h1 className="text-[#39312F] text-[32px] lg:text-4xl xl:text-5xl font-header">
               Contact Us
@@ -51,7 +57,7 @@ const ContactUs = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
