@@ -10,7 +10,7 @@ const Brands = () => {
     <div className="text-center flex flex-col gap-8 px-4 sm:gap-10 md:gap-12 lg:gap-14">
       {/* Header */}
       <h3 className="text-white font-header text-[28px] leading-tight sm:text-[32px] md:text-[36px] lg:text-[38px] xl:text-[42px] 3xl:text-5xl">
-        Trusted by 100+ companies around Nigeria
+        Trusted by 100+ companies around the world
       </h3>
 
       {/* Brand Logos */}

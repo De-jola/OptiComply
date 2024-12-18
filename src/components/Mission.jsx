@@ -7,9 +7,9 @@ const Mission = () => {
   return (
     <>
       <section className="bg-[#39312F] text-white p-6 sm:px-4 sm:py-8 lg:py-14 lg:px-20 xl:px-28 xl:py-20">
-        <div className="flex flex-col-reverse gap-8 lg:flex-row lg:items-center lg:gap-[48px]">
+        <div className="flex flex-col-reverse gap-8 lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:items-center lg:gap-[48px]">
           {/* Mission and Vision Cards */}
-          <div className="flex flex-col gap-8 lg:w-1/2 sm:gap-6 lg:gap-[40px] xl:gap-[48px]">
+          <div className="row-span-2 flex flex-col gap-[40px]">
             {/* Mission Card */}
             <div className="bg-orange-50 p-6 sm:rounded-[12px] lg:rounded-2xl flex flex-col gap-4">
               <div className="bg-white w-10 h-10 flex items-center justify-center rounded-xl">
@@ -40,11 +40,11 @@ const Mission = () => {
           </div>
 
           {/* Image Section */}
-          <div className="lg:w-1/2">
+          <div className="lg:row-span-2 lg:h-[492px]">
             <img
               src={MissionImg}
               alt="Mission Illustration"
-              className="w-auto"
+              className="w-full self-stretch lg:h-[492px]"
             />
           </div>
         </div>

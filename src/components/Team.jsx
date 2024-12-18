@@ -10,15 +10,15 @@ const Team = () => {
           <h1 className="text-[#39312F] text-[28px] lg:text-4xl xl:text-5xl font-header">
             Meet Our Team
           </h1>
-          <p className="text-gray-600 lg:w-[613px] m-auto text-[14px] lg:text-base xl:text-[20px]">
+          <p className="text-gray-600 lg:w-[613px] m-auto text-[14px] lg:text-[20px]">
             We are a dedicated team of experienced professionals driven by
             expertise and commitment.
           </p>
         </div>
-        <div className="flex flex-col gap-[16px] lg:grid grid-cols-3 grid-rows-2 lg:gap-4 lg:items-center lg:content-between lg:gap-8">
+        <div className="flex flex-col gap-[16px] lg:grid grid-cols-3 grid-rows-2 lg:gap-8 lg:items-center  ">
           {teamData.map((item) => (
             <motion.div
-              className="p-12 flex flex-col justify-end items-start rounded-[20px] h-[480px] xl:h-[520px]"
+              className="p-12 flex flex-col justify-end items-start rounded-[20px] h-[480px]   xl:w-[400px] xl:gap-y-12"
               key={item.id}
               style={{
                 background: `linear-gradient(180deg, rgba(236, 74, 10, 0.00) 50.5%, rgba(236, 74, 10, 0.80) 75%), url(${item.image}) lightgray no-repeat`,

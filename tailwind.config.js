@@ -8,7 +8,7 @@ export default {
       lg: "1024px",
       xl: "1440px",
       "2xl": "1540px",
-      "3xl": "1728px",
+      "3xl": "1680px",
     },
     extend: {
       colors: {
