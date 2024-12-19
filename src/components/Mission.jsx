@@ -2,6 +2,7 @@ import React from "react";
 import MissionImg from "../assets/images/MissionImg.svg";
 import targetIcon from "../assets/images/mingcute_target-line.svg";
 import eyeIcon from "../assets/images/flowbite_eye-outline.svg";
+import { motion } from "motion/react";
 
 const Mission = () => {
   return (
@@ -11,7 +12,12 @@ const Mission = () => {
           {/* Mission and Vision Cards */}
           <div className="row-span-2 flex flex-col gap-[40px]">
             {/* Mission Card */}
-            <div className="bg-orange-50 p-6 sm:rounded-[12px] lg:rounded-2xl flex flex-col gap-4">
+            <motion.div
+              className="bg-orange-50 p-6 sm:rounded-[12px] lg:rounded-2xl flex flex-col gap-4"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+            >
               <div className="bg-white w-10 h-10 flex items-center justify-center rounded-xl">
                 <img src={targetIcon} alt="Mission Icon" />
               </div>
@@ -23,9 +29,14 @@ const Mission = () => {
                 that ensure compliance and mitigate risks in the global
                 financial system.
               </p>
-            </div>
+            </motion.div>
             {/* Vision Card */}
-            <div className="bg-orange-50 p-6 sm:rounded-[12px] lg:rounded-2xl flex flex-col gap-4">
+            <motion.div
+              className="bg-orange-50 p-6 sm:rounded-[12px] lg:rounded-2xl flex flex-col gap-4"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+            >
               <div className="bg-white w-10 h-10 flex items-center justify-center rounded-xl">
                 <img src={eyeIcon} alt="Vision Icon" />
               </div>
@@ -36,17 +47,22 @@ const Mission = () => {
                 A world where financial compliance is seamless, secure, and
                 accessible for all institutions.
               </p>
-            </div>
+            </motion.div>
           </div>
 
           {/* Image Section */}
-          <div className="lg:row-span-2 lg:h-[492px]">
+          <motion.div
+            className="lg:row-span-2 lg:h-[492px]"
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
             <img
               src={MissionImg}
               alt="Mission Illustration"
               className="w-full self-stretch lg:h-[492px]"
             />
-          </div>
+          </motion.div>
         </div>
       </section>
     </>

@@ -20,7 +20,12 @@ const Hero = ({ handleModal }) => {
           {/* Text and Image Container */}
           <div className="flex flex-col items-center sm:gap-8 lg:flex-row lg:justify-between lg:gap-0">
             {/* Text Section */}
-            <div className="text-center lg:text-left lg:w-[473px] xl:w-[685px]">
+            <motion.div
+              className="text-center lg:text-left lg:w-[473px] xl:w-[685px]"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            >
               <p className="text-white text-[16px] font-[600] lg:text-[20px] xl:text-[24px] mb-2">
                 Welcome to OptiComply IT Solutions
               </p>
@@ -32,7 +37,7 @@ const Hero = ({ handleModal }) => {
                 scalable, and user-friendly compliance software.
               </p>
               <Button location="hero" handleClick={handleModal} />
-            </div>
+            </motion.div>
             {/* Image Section */}
             <motion.div
               className="w-auto "

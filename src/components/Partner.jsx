@@ -1,19 +1,33 @@
 import React from "react";
 import PartnerImg from "../assets/images/PartnerImg.svg";
 import checkIcon from "../assets/images/Check icon.svg";
+import { motion } from "motion/react";
 
 const Partner = () => {
   return (
     <>
       <section className="bg-orange-50  lg:pr-20 xl:pr-28 3xl:pr-36">
-        <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-[64px]" id="about">
+        <div
+          className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-[64px]"
+          id="about"
+        >
           {/* Image Section */}
-          <div className="w-full lg:w-1/2">
+          <motion.div
+            className="w-full lg:w-1/2"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
             <img src={PartnerImg} alt="Partner" className="w-full h-auto" />
-          </div>
+          </motion.div>
 
           {/* Text Section */}
-          <div className="text-center sm:pb-8 sm:px-4 lg:w-1/2 lg:text-left">
+          <motion.div
+            className="text-center sm:pb-8 sm:px-4 lg:w-1/2 lg:text-left"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
             <h2 className="text-[#39312F] text-3xl sm:text-4xl lg:text-[40px] lg:w-[400px] xl:text-5xl xl:w-[539px] 2xl:text-6xl 3xl:text-7xl font-header mb-4">
               OptiComply is your trusted partner in the fight against financial
               crimes.
@@ -50,7 +64,7 @@ const Partner = () => {
                 <span>Localized Support and Expertise.</span>
               </li>
             </ul>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>

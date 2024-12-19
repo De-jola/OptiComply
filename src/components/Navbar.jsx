@@ -58,6 +58,15 @@ const Navbar = ({ handleClick }) => {
           </li>
           <li>
             <a
+              href="#about"
+              className="hover:font-[500]"
+              onClick={handleCloseMenu}
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
               href="#solutions"
               className="hover:font-[500]"
               onClick={handleCloseMenu}
@@ -72,15 +81,6 @@ const Navbar = ({ handleClick }) => {
               onClick={handleCloseMenu}
             >
               Features
-            </a>
-          </li>
-          <li>
-            <a
-              href="#about"
-              className="hover:font-[500]"
-              onClick={handleCloseMenu}
-            >
-              About
             </a>
           </li>
           <li>
