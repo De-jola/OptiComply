@@ -11,6 +11,7 @@ import Testimonials from "./components/Testimonials";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import DemoForm from "./components/DemoForm";
+import "../src/index.css";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
