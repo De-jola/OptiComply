@@ -16,8 +16,8 @@ export default {
       },
     },
     fontFamily: {
-      header: "Signate Grotesk",
-      body: "Inter",
+      header: ["'Signate Grotesk'", "sans-serif"],
+      body: ["'Inter'", "sans-serif"],
     },
 
     plugins: [],
