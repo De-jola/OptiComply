@@ -34,9 +34,9 @@ const Solutions = () => {
               <div className="bg-orange-600 w-[48px] xl:w-[64px] flex justify-center p-2 rounded-xl">
                 <img src={report} />
               </div>
-              <h1 className="text-[24px] lg:text-2xl xl:text-3xl font-bold text-orange-600">
+              <p className="text-[24px] lg:text-2xl xl:text-3xl font-bold text-orange-600">
                 AML/CFT Modules
-              </h1>
+              </p>
               <p className="text-gray-600 text-[14px] lg:text-lg">
                 We provide modules like Currency Transaction Reports (CTR) and
                 Suspicious Activity Reports (SAR) automate reporting processes,
@@ -52,9 +52,9 @@ const Solutions = () => {
               <div className="bg-orange-600 w-[48px] xl:w-[64px] flex justify-center p-2 rounded-xl">
                 <img src={customer} />
               </div>
-              <h1 className="text-[24px] lg:text-2xl xl:text-3xl font-bold text-orange-600">
+              <p className="text-[24px] lg:text-2xl xl:text-3xl font-bold text-orange-600">
                 Customer Risk Rating Modules
-              </h1>
+              </p>
               <p className="text-gray-600 text-[14px] lg:text-lg">
                 Our Customer Risk Rating (CRR) module leverages advanced AI and
                 machine learning to evaluate customer profiles and classify them
@@ -70,9 +70,9 @@ const Solutions = () => {
               <div className="bg-orange-600 w-[48px] xl:w-[64px] flex justify-center p-2 rounded-xl">
                 <img src={aiIcon} />
               </div>
-              <h1 className="text-[24px] lg:text-2xl xl:text-3xl font-bold text-orange-600">
+              <p className="text-[24px] lg:text-2xl xl:text-3xl font-bold text-orange-600">
                 AI and Machine Learning
-              </h1>
+              </p>
               <p className="text-gray-600 text-[14px] lg:text-lg">
                 Leveraging AI for anomaly detection, predictive risk analysis,
                 and enhanced decision-making.
@@ -87,9 +87,9 @@ const Solutions = () => {
               <div className="bg-orange-600 w-[48px] xl:w-[64px] flex justify-center p-2 rounded-xl">
                 <img src={binoculars} />
               </div>
-              <h1 className="text-[24px] lg:text-2xl xl:text-3xl font-bold text-orange-600">
+              <p className="text-[24px] lg:text-2xl xl:text-3xl font-bold text-orange-600">
                 Watchlist and PEP Screening
-              </h1>
+              </p>
               <p className="text-gray-600 text-[14px] lg:text-lg">
                 We provide automated real-time screening against global
                 watchlists and PEP databases to identify high-risk customers.

@@ -21,9 +21,9 @@ const Mission = () => {
               <div className="bg-white w-10 h-10 flex items-center justify-center rounded-xl">
                 <img src={targetIcon} alt="Mission Icon" />
               </div>
-              <h3 className="text-xl sm:text-[20px] lg:text-3xl xl:text-[30px] font-bold text-orange-600">
+              <p className="text-xl sm:text-[20px] lg:text-3xl xl:text-[30px] font-bold text-orange-600">
                 Our Mission
-              </h3>
+              </p>
               <p className="text-sm sm:text-[14px] lg:text-lg xl:text-[18px]  text-gray-700">
                 To empower financial institutions with cutting-edge solutions
                 that ensure compliance and mitigate risks in the global
@@ -40,9 +40,9 @@ const Mission = () => {
               <div className="bg-white w-10 h-10 flex items-center justify-center rounded-xl">
                 <img src={eyeIcon} alt="Vision Icon" />
               </div>
-              <h3 className="text-xl sm:text-[20px] lg:text-3xl xl:text-[30px] font-bold text-orange-600">
+              <p className="text-xl sm:text-[20px] lg:text-3xl xl:text-[30px] font-bold text-orange-600">
                 Our Vision
-              </h3>
+              </p>
               <p className="text-sm sm:text-[14px] lg:text-lg xl:text-[18px] text-gray-700">
                 A world where financial compliance is seamless, secure, and
                 accessible for all institutions.

@@ -29,7 +29,7 @@ const Team = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              <h1 className="text-white text-[600] text-3xl">{item.name}</h1>
+              <p className="text-white text-[600] text-3xl">{item.name}</p>
               <p className="text-white text-[16px]">{item.position}</p>
             </motion.div>
           ))}

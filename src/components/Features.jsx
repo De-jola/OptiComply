@@ -29,7 +29,7 @@ const Features = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              <h1 className="text-[20px] lg:text-3xl">AI-Driven Insights</h1>
+              <p className="text-[20px] lg:text-3xl">AI-Driven Insights</p>
               <p className="text-gray-300 w-full lg:w-3/5 text-[14px] lg:text-base">
                 Identify risks before they become issues with predictive
                 analytics.
@@ -45,9 +45,7 @@ const Features = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              <h1 className="text-[20px] lg:text-3xl">
-                User-Friendly Interface
-              </h1>
+              <p className="text-[20px] lg:text-3xl">User-Friendly Interface</p>
               <p className="text-gray-300 text-[14px] lg:text-base">
                 Navigate compliance tasks with ease.
               </p>
@@ -62,7 +60,7 @@ const Features = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              <h1 className="text-[20px] lg:text-3xl">Scalability</h1>
+              <p className="text-[20px] lg:text-3xl">Scalability</p>
               <p className="text-gray-300 text-[14px] lg:text-base">
                 Expand functionality with pre-integrated modules.
               </p>
