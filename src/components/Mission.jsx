@@ -53,7 +53,7 @@ const Mission = () => {
           {/* Image Section */}
           <motion.div
             className="lg:row-span-2 lg:h-[492px]"
-            initial={{ opacity: 0, x: 100 }}
+            initial={{ opacity: 0, x: 10 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
