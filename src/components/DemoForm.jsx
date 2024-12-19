@@ -51,7 +51,7 @@ const DemoForm = ({ onclose }) => {
       onClick={onclose}
     >
       <div
-        className="fixed top-3 right-3 left-3 text-center p-12 xl:p-16 lg:w-[600px] xl:w-[644px] bg-[#FCFCFD] m-auto rounded-[20px] flex flex-col gap-[16px]"
+        className="fixed top-3 right-3 left-3 text-center p-6 lg:p-12 xl:p-16 lg:w-[600px] xl:w-[644px] bg-[#FCFCFD] m-auto rounded-[20px] flex flex-col gap-[16px]"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex flex-col items-center gap-[10px] lg:w-[468px] xl:w-[516px]">
@@ -65,7 +65,7 @@ const DemoForm = ({ onclose }) => {
           </p>
         </div>
         <form
-          className="flex flex-col gap-6 lg:w-[400px] xl:w-[434px] m-auto"
+          className="flex flex-col gap-6 w-full lg:w-[400px] xl:w-[434px] m-auto"
           onSubmit={handleSubmit}
         >
           <input
