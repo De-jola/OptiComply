@@ -27,8 +27,12 @@ const Footer = () => {
           <div className="flex flex-col gap-4 xl:gap-20px ">
             <h1 className="xl:text-[20px] font-bold text-lg">Company</h1>
             <ul className="flex flex-col gap-[10px]">
-              <li>About</li>
-              <li>Contact us</li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#contact">Contact us</a>
+              </li>
               <li>Careers</li>
               <li>FAQs</li>
             </ul>
@@ -36,10 +40,21 @@ const Footer = () => {
           <div className="flex flex-col gap-4 xl:gap-20px ">
             <h1 className="xl:text-[20px] font-bold text-lg">Solutions</h1>
             <ul className="flex flex-col gap-[10px]">
-              <li>AML/CFT Modules</li>
-              <li>AI and Machine Learning</li>
-              <li>Watchlist and PEP Screening</li>
-              <li>Customer Risk Rating Modules</li>
+              <li>
+                <a href="#solutions">AML/CFT Modules</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#solutions">AI and Machine Learning</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#solutions">Watchlist and PEP Screening</a>
+              </li>
+              <li>
+                {" "}
+                <a href="#solutions">Customer Risk Rating Modules</a>
+              </li>
             </ul>
           </div>
           <div className="flex flex-col gap-4 xl:gap-20px ">
