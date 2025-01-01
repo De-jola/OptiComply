@@ -18,7 +18,7 @@ const Team = () => {
         <div className="flex flex-col gap-[16px] lg:grid grid-cols-3 grid-rows-2 lg:gap-8 lg:items-center  ">
           {teamData.map((item) => (
             <motion.div
-              className="p-12 flex flex-col justify-end items-start rounded-[20px] h-[480px]   xl:w-[400px] xl:gap-y-12"
+              className="p-[48px] flex flex-col justify-end items-start rounded-[20px] h-[480px]   xl:w-[400px] "
               key={item.id}
               style={{
                 background: `linear-gradient(180deg, rgba(236, 74, 10, 0.00) 50.5%, rgba(236, 74, 10, 0.80) 75%), url(${item.image}) lightgray no-repeat`,

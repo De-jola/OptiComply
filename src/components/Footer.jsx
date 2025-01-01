@@ -1,6 +1,7 @@
 import React from "react";
 import footerIcon from "../assets/images/footerIcon.svg";
 import socialMediaIcons from "../assets/images/Social Media Container.svg";
+import solutionsData from "../data/solutionsData";
 
 const Footer = () => {
   return (
@@ -40,21 +41,11 @@ const Footer = () => {
           <div className="flex flex-col gap-4 xl:gap-20px ">
             <h1 className="xl:text-[20px] font-bold text-lg">Solutions</h1>
             <ul className="flex flex-col gap-[10px]">
-              <li>
-                <a href="#solutions">AML/CFT Modules</a>
-              </li>
-              <li>
-                {" "}
-                <a href="#solutions">AI and Machine Learning</a>
-              </li>
-              <li>
-                {" "}
-                <a href="#solutions">Watchlist and PEP Screening</a>
-              </li>
-              <li>
-                {" "}
-                <a href="#solutions">Customer Risk Rating Modules</a>
-              </li>
+              {solutionsData.map((item) => (
+                <li key={item.id}>
+                  <a href="#solutions">{item.title}</a>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="flex flex-col gap-4 xl:gap-20px ">

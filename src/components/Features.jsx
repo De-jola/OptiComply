@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
+import featuresData from "../data/featuresData";
 
 const Features = () => {
   return (
@@ -18,53 +19,26 @@ const Features = () => {
               OptiComply offers unparalleled features.
             </p>
           </div>
-          <div className="flex flex-col gap-[6] lg:grid grid-cols-2 grid-rows-2 gap-8 text-white">
-            <motion.div
-              className="bg-cover bg-no-repeat bg-lightgray row-span-2 px-12 py-20 sm:rounded-[12px] lg:rounded-[20px] sm:h-[390px] lg:h-auto"
-              style={{
-                background:
-                  'linear-gradient(180deg, rgba(1, 38, 112, 0.70) 0%, rgba(1, 38, 112, 0.00) 100%), url("/FeatureImg3.png") lightgray 50%',
-              }}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-            >
-              <p className="text-[20px] lg:text-3xl">AI-Driven Insights</p>
-              <p className="text-gray-300 w-full lg:w-3/5 text-[14px] lg:text-base">
-                Identify risks before they become issues with predictive
-                analytics.
-              </p>
-            </motion.div>
-            <motion.div
-              className="bg-cover bg-no-repeat bg-lightgray px-12 py-20 sm:rounded-[12px] lg:rounded-[20px] sm:h-[233.270px] lg:h-[auto]"
-              style={{
-                background:
-                  'linear-gradient(90deg, rgba(57, 49, 47, 0.80) 0%, rgba(57, 49, 47, 0.00) 100%), url("/FeatureImg2.png") lightgray 50%',
-              }}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-            >
-              <p className="text-[20px] lg:text-3xl">User-Friendly Interface</p>
-              <p className="text-gray-300 text-[14px] lg:text-base">
-                Navigate compliance tasks with ease.
-              </p>
-            </motion.div>
-            <motion.div
-              className="bg-cover bg-no-repeat bg-lightgray px-12 py-20 sm:rounded-[12px] lg:rounded-[20px] lg:h-[auto]"
-              style={{
-                background:
-                  'linear-gradient(90deg, rgba(57, 49, 47, 0.70) 0%, rgba(57, 49, 47, 0.00) 100%), url("/FeatureImg1.png") lightgray 50%',
-              }}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-            >
-              <p className="text-[20px] lg:text-3xl">Scalability</p>
-              <p className="text-gray-300 text-[14px] lg:text-base">
-                Expand functionality with pre-integrated modules.
-              </p>
-            </motion.div>
+          <div className="flex flex-col gap-[6] lg:grid grid-cols-2 grid-rows-3 gap-8 text-white">
+            {featuresData.map((item) => (
+              <motion.div
+                key={item.id}
+                className={`bg-cover bg-no-repeat bg-lightgray  px-12 py-20 sm:rounded-[12px] lg:rounded-[20px] ${
+                  item.id === 1 ? "sm:h-[390px] row-span-2" : ""
+                } lg:h-auto`}
+                style={{
+                  background: `${item.background}`,
+                }}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+              >
+                <p className="text-[20px] lg:text-3xl">{item.title}</p>
+                <p className="text-gray-300 w-full lg:w-3/5 text-[14px] lg:text-base">
+                  {item.description}
+                </p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
