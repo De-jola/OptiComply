@@ -11,7 +11,7 @@ const ContactUs = () => {
         className="bg-cover px-4 py-8 lg:bg-left lg:py-14 lg:px-20 xl:py-20 xl:px-28 lg:flex justify-end"
         style={{
           background:
-            'linear-gradient(0deg, rgba(236, 74, 10, 0.10) 0%, rgba(236, 74, 10, 0.10) 100%), url("/Contact us.png") lightgray no-repeat',
+            'linear-gradient(0deg, rgba(236, 74, 10, 0.10) 0%, rgba(236, 74, 10, 0.10) 100%), url("/Contact us.webp") lightgray no-repeat',
           backgroundSize: "cover",
           backgroundPosition: "top left",
         }}

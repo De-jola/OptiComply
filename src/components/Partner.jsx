@@ -1,5 +1,5 @@
 import React from "react";
-import PartnerImg from "../assets/images/PartnerImg.svg";
+import PartnerImg from "../assets/images/PartnerImg.webp";
 import checkIcon from "../assets/images/Check icon.svg";
 import { motion } from "motion/react";
 

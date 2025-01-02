@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import heroPlaceholder from "../assets/images/Frame 4.svg";
+import heroPlaceholder from "../assets/images/Frame 4.webp";
 import Button from "./Button";
 import Brands from "./Brands";
 import { motion } from "motion/react";
@@ -13,15 +13,15 @@ const Hero = ({ handleModal }) => {
         className="bg-lightgray"
         style={{
           background:
-            "linear-gradient(270deg, rgba(214, 78, 15, 0.00) 33.05%, rgba(214, 78, 15, 0.70) 99.84%), url('/hero-image.png') lightgray 50% / cover no-repeat",
+            "linear-gradient(270deg, rgba(214, 78, 15, 0.00) 33.05%, rgba(214, 78, 15, 0.70) 99.84%), url('/hero-image.webp') lightgray 50% / cover no-repeat",
         }}
       >
         <div className="px-4 py-16 flex flex-col gap-8 sm:gap-12 lg:px-20 xl:px-28 xl:py-20 2xl:px-32 3xl:px-36">
           {/* Text and Image Container */}
-          <div className="flex flex-col items-center sm:gap-8 lg:flex-row lg:justify-between lg:gap-0">
+          <div className="flex flex-col items-center sm:gap-8 lg:flex-row lg:justify-between">
             {/* Text Section */}
             <motion.div
-              className="text-center lg:text-left lg:w-[473px] xl:w-[685px]"
+              className="text-center lg:text-left  "
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
@@ -40,16 +40,12 @@ const Hero = ({ handleModal }) => {
             </motion.div>
             {/* Image Section */}
             <motion.div
-              className="w-auto "
+              className="w-11/12"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              <img
-                src={heroPlaceholder}
-                alt="Hero Placeholder"
-                className="w-full"
-              />
+              <img src={heroPlaceholder} alt="Hero Placeholder" className="" />
             </motion.div>
           </div>
           {/* Brands Section */}
